@@ -29,8 +29,8 @@ for(let seat = 0; seat<seats.length; seat++){
         else{
             alert("All seat are fillup")
         }
-
-      
+        totalprice+= price;
+        document.getElementById("tottaall").innerText = totalprice;
 
 
         // const seatAccess = seatt.querySelector("h3").innerText;
@@ -49,14 +49,7 @@ for(let seat = 0; seat<seats.length; seat++){
         // economyClasss.appendChild(classss);
 
 
-        totalprice+= price;
-        document.getElementById("tottaall").innerText = totalprice;
-
+       
     });
 }
 
-
-function nextt(){
-    const nextt = document.getElementById('nexttt');
-    alert("mmmmm");
-}
