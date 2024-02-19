@@ -190,7 +190,7 @@
                         </div>
                         <div class="flex gap-16 mb-4">
                             <p>A</p>
-                            <kbd class="kbd px-10">A1</kbd>
+                            <kbd class="kbd px-10"><h3>A1</h3></kbd>
                             <kbd class="kbd px-10">A2</kbd>
                             <kbd class="kbd px-10">A3</kbd>
                             <kbd class="kbd px-10">A4</kbd>
@@ -242,15 +242,14 @@
                                     </div>
                                     <div>
                                         <h2 class="font-bold">Price</h2>
-                                        <p>550</p>
-                                        <p>550</p>
+                                        
                                     </div>
                                 </div>
                                 
                                 <hr>
                                 <div class="flex justify-between font-bold">
                                     <h2>Total Price</h2>
-                                    <h2>BDT1100</h2>
+                                    <h2 id="tottaall"></h2>
                                 </div>
                                 <label id="copupon" class="input input-bordered flex items-center gap-2">
                                     <input type="text" class="grow" placeholder="Have any copupon?" />
@@ -278,7 +277,30 @@
                                     </div>
                                     <input type="email" placeholder="Enter your email" class="input input-bordered w-full max-w-xs" />
                                 </label>
-                                <button class="btn bg-green-500 text-white w-full max-w-xs mt-6">Next</button>
+                                
+                                <a href="#my_modal_8" class="btn bg-green-500 text-white w-full max-w-xs mt-6">Next</a>
+                                <div class="modal" role="dialog" id="my_modal_8">
+                                <div class="modal-box">
+                                    <div class=" flex justify-center">
+                                        <img src="./images/success.png" alt="">
+                                    </div>
+                                    <h3 class="font-bold text-2xl text-green-600 flex justify-center">Success</h3>
+                                    <div class=" flex justify-center">
+                                        <p class="py-4 font-bold">
+                                            Thank you for Booking Our Bus Seats.
+                                            We are working hard to find the best service and deals for you.
+                                            </p>
+                                    </div>
+                                    <div class=" flex justify-center">
+                                        <p class="py-4">Shortly you will find a confirmation in your email.
+                                            </p>
+                                    </div>
+                                    <div class="modal-action justify-center">
+                                    <a href="#" class="btn bg-green-500 text-white">Continue</a>
+                                    </div>
+                                    
+                                </div>
+                                </div>
                             </div>
                         </div>
                     </div>

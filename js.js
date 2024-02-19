@@ -9,6 +9,8 @@ let seatCount = 0;
 let totalSeat = 16;
 let selectSeatNum = 0;
 let nonSelectSeat = seatCount;
+const price = 550;
+totalprice = 0;
 const seats = document.querySelectorAll(".kbd")
 for(let seat = 0; seat<seats.length; seat++){
     const seatt = seats[seat];
@@ -28,21 +30,33 @@ for(let seat = 0; seat<seats.length; seat++){
             alert("All seat are fillup")
         }
 
+      
 
-        const seatAccess = seatt.querySelector("h4").innerText;
-        console.log(seatAccess);
-        const price = parseInt(seatt.querySelector("p").innerText.split(" ")[0]);
-        
-        const seatNumber = document.getElementById("seatNum");
-        
-        const seatn = document.createElement("p");
-        seatn.innerText = seatAccess;
-        seatNumber.appendChild(pp);
 
-        const economyClasss = document.getElementById("economyClass");
-        const classss = document.createElement("p");
-        classss.innerText = "economy";
-        classss.classList.add("class");
-        economyClasss.appendChild(classss);
+        // const seatAccess = seatt.querySelector("h3").innerText;
+        // const price = parseInt(seatt.querySelector("p").innerText.split(" ")[0]);
+        
+        // const seatNumber = document.getElementById("seatNum");
+        
+        // const seatn = document.createElement("p");
+        // seatn.innerText = seatAccess;
+        // seatNumber.appendChild(pp);
+
+        // const economyClasss = document.getElementById("economyClass");
+        // const classss = document.createElement("p");
+        // classss.innerText = "economy";
+        // classss.classList.add("class");
+        // economyClasss.appendChild(classss);
+
+
+        totalprice+= price;
+        document.getElementById("tottaall").innerText = totalprice;
+
     });
+}
+
+
+function nextt(){
+    const nextt = document.getElementById('nexttt');
+    alert("mmmmm");
 }
